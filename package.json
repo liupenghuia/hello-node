@@ -14,5 +14,11 @@
   "type": "commonjs",
   "dependencies": {
     "md5": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.28.3",
+    "@babel/core": "^7.28.3",
+    "@babel/preset-env": "^7.28.3",
+    "eslint": "^9.34.0"
   }
 }
