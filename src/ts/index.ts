@@ -4,6 +4,16 @@ function getFirstWord(msg: string) {
 
 getFirstWord('Hello World')
 
+
+// 可以在 demo 里运行这段代码
+function counter(count: number | string) {
+    console.log(`The current count is: ${count}.`)
+}
+// 不论传数值还是字符串，都可以达到的目的
+counter(1)  // The current count is: 1.
+counter('2')  // The current count is: 2.
+
+
 function test1() {
     // 字符串
     const str: string = 'Hello World'
