@@ -7,6 +7,7 @@
     "dev:cjs": "node src/cjs/index.cjs",
     "dev:esm": "node src/esm/index.mjs",
     "compile": "babel src/babel --out-dir compiled",
+    "dev:ts": "ts-node src/ts/index.ts",
     "serve": "node server/index.js"
   },
   "keywords": [],
@@ -20,6 +21,8 @@
     "@babel/cli": "^7.28.3",
     "@babel/core": "^7.28.3",
     "@babel/preset-env": "^7.28.3",
-    "eslint": "^9.34.0"
+    "eslint": "^9.34.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
   }
 }
