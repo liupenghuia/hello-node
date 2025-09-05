@@ -1,6 +1,5 @@
 // ESM 模块文件
 // export default 'Hello World'
-
-export default {
+export const m = {
   foo: 1,
 }
