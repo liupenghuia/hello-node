@@ -6,6 +6,7 @@
   "scripts": {
     "dev:cjs": "node src/cjs/index.cjs",
     "dev:esm": "node src/esm/index.mjs",
+    "compile": "babel src/babel --out-dir compiled",
     "serve": "node server/index.js"
   },
   "keywords": [],
