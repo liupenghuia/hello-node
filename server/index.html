@@ -8,11 +8,14 @@
     <title>ESM run in browser</title>
   </head>
   <body>
+    <!-- 浏览器不支持 CommonJS 模块，所以需要转换为 ESM 模块 -->
+    <!-- <script type="module" src="./index.cjs"></script> -->
     <script type="module" src="./index.mjs"></script>
+    <script type="module">
+      // 内联模块代码
+      console.log('这是内联模块代码');
+    </script>
 
     <title>Hello Node</title>
-
-
-
   </body>
 </html>
