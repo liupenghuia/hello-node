@@ -204,7 +204,7 @@ obj.sum4(1, 2)
 function queryData(): Promise<string> {
     return new Promise((resolve) => {
         setTimeout(() => {
-            resolve('Hello World')
+            resolve('测试异步函数 Hello World')
         }, 3000)
     })
 }
