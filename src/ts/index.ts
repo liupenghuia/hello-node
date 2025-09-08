@@ -170,3 +170,49 @@ const petter4: User2 = {
     name: 'Petter',
     age: 18,
 }
+
+//函数
+// 注意：这是 TypeScript 代码
+
+// 写法一：函数声明
+function sum1(x: number, y: number): number {
+    return x + y
+}
+
+// 写法二：函数表达式
+const sum2 = function (x: number, y: number): number {
+    return x + y
+}
+
+// 写法三：箭头函数
+const sum3 = (x: number, y: number): number => x + y
+
+// 写法四：对象上的方法
+const obj = {
+    sum4(x: number, y: number): number {
+        return x + y
+    }
+}
+sum1(1, 2)
+sum2(1, 2)
+sum3(1, 2)
+obj.sum4(1, 2)
+
+
+//异步函数
+// 注意这里的返回值类型
+function queryData(): Promise<string> {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve('Hello World')
+        }, 3000)
+    })
+}
+queryData().then(
+    (data) => console.log(data)
+)
+queryData().then(
+    (data) => {
+        console.log(data)
+    }
+)
