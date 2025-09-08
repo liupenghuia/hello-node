@@ -216,3 +216,15 @@ queryData().then(
         console.log(data)
     }
 )
+
+// 这段代码在 TS 里运行会报错
+function getFirstWords(msg: any) {
+    console.log(String(msg).split(' ')[0])
+  }
+  getFirstWords('Hello World')
+  getFirstWords(123)
+
+
+  // 但是类型断言过程中，遗漏了
+const petters = {} as UserItem
+petters.name = 'Petter'
