@@ -170,9 +170,11 @@ function getFirstWords(msg) {
 }
 getFirstWords('Hello World');
 getFirstWords(123);
-// src/ts/index.ts
-var md5_1 = require("md5");
-console.log(' hello world md5加密后:', (0, md5_1.default)('Hello World'));
 // 但是类型断言过程中，遗漏了
 var petters = {};
 petters.name = 'Petter';
+var greet_1 = require("./greet");
+// 单个问候语
+console.log((0, greet_1.default)('Petter'));
+// 多个问候语
+console.log((0, greet_1.default)(['Petter', 'Tom', 'Jimmy']));

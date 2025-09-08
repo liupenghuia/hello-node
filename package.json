@@ -8,6 +8,7 @@
     "dev:esm": "node src/esm/index.mjs",
     "compile": "babel src/babel --out-dir compiled",
     "dev:ts": "ts-node src/ts/index.ts",
+    "build": "tsc src/ts/index.ts --skipLibCheck --outDir dist --taget es6",
     "serve": "node server/index.js"
   },
   "keywords": [],

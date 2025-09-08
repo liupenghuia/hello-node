@@ -228,3 +228,10 @@ function getFirstWords(msg: any) {
   // 但是类型断言过程中，遗漏了
 const petters = {} as UserItem
 petters.name = 'Petter'
+
+
+import greets from './greet'
+// 单个问候语
+console.log(greets('Petter'))
+// 多个问候语
+console.log(greets(['Petter', 'Tom', 'Jimmy']))
